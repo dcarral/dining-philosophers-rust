@@ -1,4 +1,9 @@
 use std::thread;
+use std::sync::Mutex;
+
+struct Table {
+    forks: Vec<Mutex<()>>,
+}
 
 struct Philosopher {
     name: String,
