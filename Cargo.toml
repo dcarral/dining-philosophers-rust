@@ -1,0 +1,4 @@
+[package]
+name = "dining-philosophers-rust"
+version = "0.1.0"
+authors = ["Daniel Carral <dan@dcarral.org>"]
