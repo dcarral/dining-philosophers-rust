@@ -22,6 +22,7 @@ impl Philosopher {
 
     fn eat(&self, table: &Table) {
         let _left = table.forks[self.left].lock().unwrap();
+        thread::sleep_ms(1000); // Applies a 'simultaneity fudge factor'
         let _right = table.forks[self.right].lock().unwrap();
 
         println!("{} is eating.", self.name);
